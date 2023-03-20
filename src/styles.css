@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: sans-serif;
+}
+.header-title{
+    text-align: center;
+    border: 1px solid gray;
+    margin-left: 280px;
+    margin-right: 280px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
+    background-color: silver;
+    }

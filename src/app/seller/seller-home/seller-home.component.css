@@ -1,0 +1,24 @@
+table tbody tr th{
+    padding: 20px;
+border: 1px solid #8080807a;
+width: 550px;
+text-align: center;
+font-size: x-large;
+}
+table thead tr th{
+text-align: center;
+font-size: xx-large;
+color: darkgreen;
+}
+.updateIcons{
+    font-size: xx-large;
+    color: rgb(0, 30, 255); 
+    margin-left: 10px;  
+}
+.deleteIcons{
+    font-size: xx-large;
+    color: red;   
+}
+.updateIcons:hover, .deleteIcons:hover{
+cursor: pointer;
+}

@@ -1,0 +1,114 @@
+{
+  "seller": [
+    {
+      "userName": "pou",
+      "email": "pou@test.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "userName": "mac",
+      "email": "mac@test.com",
+      "password": "4321",
+      "id": 2
+    },
+    {
+      "userName": "Pika",
+      "email": "pika@test.com",
+      "password": "44332211",
+      "id": 3
+    },
+    {
+      "userName": "kakali",
+      "email": "kak.test.com",
+      "password": "1111",
+      "id": 4
+    },
+    {
+      "userName": "mita",
+      "email": "mita@test.com",
+      "password": "1111",
+      "id": 5
+    },
+    {
+      "userName": "pok",
+      "email": "plp@aes.com",
+      "password": "5454",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "name": "Lipstick",
+      "price": "450",
+      "color": "Cherry red",
+      "category": "Cosmetics",
+      "description": "liquid matte & skin friendly",
+      "image": "https://rukminim1.flixcart.com/image/850/850/ky90scw0/lipstick/t/a/w/10-lip-shape-waterproof-lipstick-matte-makeup-long-lasting-original-imagafk5ysxjjrw5.jpeg?q=90",
+      "id": 7
+    },
+    {
+      "name": "samsung m53 5g",
+      "price": "23000",
+      "color": "green",
+      "category": "Mobile",
+      "description": "A 5g smart phone",
+      "image": "https://static.digit.in/default/fc5a719e7c335c331b87215bf9604c19cdc398a2.jpeg?tr=w-1200",
+      "id": 8
+    },
+    {
+      "name": "Asus rog strick g",
+      "price": "59999",
+      "color": "black",
+      "category": "Laptop",
+      "description": "A high-performance LAPTOP",
+      "image": "https://images-cdn.ubuy.co.in/6342e07a90861311fd487d25-asus-rog-strix-g-15-6-inch-fhd-gaming.jpg",
+      "id": 9
+    },
+    {
+      "name": "Nokia 2600 Classic",
+      "price": "5000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "A basic phone",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Nokia_2600_Classic_1.jpg",
+      "id": 10
+    },
+    {
+      "name": "Nothing phone 1",
+      "price": "29999",
+      "color": "white",
+      "category": "Mobile",
+      "description": "Next gen phone ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMzu2F1ruOyCn0QdvrTJuyojkJOr3xC4B3avqUtVRaCxdR1nZuFbxf2EyXfbUnEm2EEQ&usqp=CAU",
+      "id": 11
+    },
+    {
+      "name": "Realme 8",
+      "price": "14999",
+      "color": "black",
+      "category": "Mobile",
+      "description": "A tough 4g phone",
+      "image": "https://www.digitaltrends.com/wp-content/uploads/2021/05/realme-8-5g-back.jpg?fit=2000%2C1333&p=1",
+      "id": 12
+    },
+    {
+      "name": "Oneplus 6",
+      "price": "35000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "A legend smartphone",
+      "image": "https://mondrian.mashable.com/uploads%252Fcard%252Fimage%252F777116%252F72154279-40b3-424b-81a8-b995c1c96fb8.jpg%252Ffit-in__1440x0.jpg?signature=17xHlyEfgW83CmA1Vv-nC966S2Y=&source=https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com",
+      "id": 13
+    },
+    {
+      "name": "Lakme iconic",
+      "price": "89",
+      "color": "black",
+      "category": "Cosmetics",
+      "description": "A long lasting kajal",
+      "image": "https://1.bp.blogspot.com/-SW0nZKDww2k/V2zsviqRp9I/AAAAAAAAGVE/xK8XafkcEowcKnCE1HZKT7lmWTuep-buQCLcB/w1200-h630-p-k-no-nu/image001.jpg",
+      "id": 14
+    }
+  ]
+}

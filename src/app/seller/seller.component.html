@@ -1,0 +1,46 @@
+<!--Sign up forms-->
+<div class="signUp" *ngIf="!login">
+<h2 class="header-title">Don't have any seller account! Kindly signup here...</h2>
+<form class="container" #loginForm="ngForm" (ngSubmit)="fromLogin(loginForm.value)">
+    <div class="form-group">
+        <label for="userName">Full Name</label>
+        <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" name="userName" ngModel placeholder="Enter name">
+      </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <p class="formSwitch" (click)="switchForm()">Have an account? Click here...</p>
+  </form>
+</div>
+
+
+
+
+
+
+
+<!--Login forms-->
+<div class="login" *ngIf="login">
+    <h2 class="header-title">Already have a seller account? Please login...</h2>
+<form action="" class="container" #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" (click)="hideErrorMsg()" class="form-control" id="exampleInputEmail1" name="email" ngModel aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <p class="errorMsg" *ngIf="showErrorMsg">Username and password did not matched!!! Try again</p>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <p class="formSwitch" (click)="switchForm()">Have not any account? Click here...</p>
+      </form>
+</div>

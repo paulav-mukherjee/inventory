@@ -1,0 +1,54 @@
+.carousel {
+    display: inline flow-root list-item !important;
+    height: 350px;
+    width: 988px;
+    text-align: center;
+    margin-left: 119px !important;
+    list-style-type: none;
+}
+
+.card {
+    height: 400px;
+    width: 19rem !important;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    padding: 10px 10px;
+    background: linear-gradient(to bottom, #feffe1, #d0d3ff);
+    justify-content: space-between;
+}
+
+.card-img-top {
+    height: 182px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    margin-top: 8px;
+}
+
+.card-text {
+    margin-bottom: 3rem;
+}
+
+.button>a {
+    margin-right: 10px;
+}
+
+.slider-img {
+    margin-top: -10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.461);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 16px;
+    height: 100px;
+    text-shadow: 1px 1px black;
+    font-size: large;
+}

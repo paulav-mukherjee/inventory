@@ -1,0 +1,128 @@
+/* Default styles for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #d0f4fb;
+  color: black;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  border-bottom: 0px !important;
+
+}
+
+.search-items {
+  position: absolute;
+  display: list-item !important;
+  z-index: 10;
+  top: 66px;
+  list-style: none;
+  background-color: #d4f7fd;
+  color: #214200;
+  border: 2px solid black;
+  border-top: 0px;
+  width: 630px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  border-radius: 0px;
+}
+.search-items>li{
+  border: 1px solid grey;
+  border-bottom: 0px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+
+}
+
+.search form {
+  display: flex;
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 630px;
+  border: 2px solid black;
+}
+
+.search button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #555;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+  /* Reduce padding and font size for smaller screens */
+  header {
+    padding: 10px;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  /* Collapse navigation menu and search bar for smallest screens */
+  nav {
+    display: none;
+  }
+
+  .search {
+    margin-left: auto;
+  }
+
+  .search input[type="text"] {
+    width: 100%;
+  }
+
+  .search button {
+    margin-left: 0;
+  }
+}

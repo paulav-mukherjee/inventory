@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <h2 class="header-title">Listed Products</h2>
+    <table class="table">
+       <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Colour</th>
+            <th>Catagory</th>
+            <th>Description</th>  
+            <th>Action</th>  
+        </tr>
+       </thead> 
+       <tbody>
+        <tr *ngFor="let items of productList">
+            <th><img src="{{items.image}}" alt="no image" height="150px" width="250px"></th>
+            <th>{{items.name | titlecase}}</th>
+            <th>{{items.price | titlecase | currency: 'INR'}}</th>
+            <th>{{items.color | titlecase}}</th>
+            <th>{{items.category | titlecase}}</th>
+            <th>{{items.description | titlecase}}</th>
+            <th>
+                <!--add font icon-->
+                
+                <fa-icon class="deleteIcons" [icon]="deletIcon" (click)="removeItem(items.id)"></fa-icon>
+                <a routerLink="/seller-update-list/{{items.id}}">
+                    <fa-icon class="updateIcons" [icon]="updateIcon" (click)="updateItem(items.id)"></fa-icon>
+                </a>
+            </th>
+        </tr>
+       </tbody>
+    </table>
+</div>
