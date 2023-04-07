@@ -1,12 +1,12 @@
-<div class=" m-1">
-  <nav class="top-bar navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 42, 83)">
+<div class="my-header m-1">
+  <nav class="top-bar navbar navbar-default navbar-collapse navbar-expand-lg navbar-dark" style="background-color: rgb(0, 42, 83)">
     <a class="navbar-brand text-light" routerLink="/home">Inventory App</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="container">
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" #searchName style="width: 380px;" type="search" placeholder="Search" aria-label="Search" (keyup)="findProduct($event)" (blur)="removeSearch()">
+      <input class="form-control mr-sm-2" #searchName id="search-bar" style="width: 380px;" type="search" placeholder="Search" aria-label="Search" (keyup)="findProduct($event)" (blur)="removeSearch()">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="searchValue(searchName)">Search</button>
     </form>
     <ul class="search-items" *ngIf="searchedItems">

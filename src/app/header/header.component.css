@@ -128,20 +128,45 @@ nav a {
 
 @media screen and (max-width: 576px) {
 
-  /* Collapse navigation menu and search bar for smallest screens */
-  nav {
-    display: none;
-  }
-
-  .search {
-    margin-left: auto;
-  }
-
-  .search input[type="text"] {
-    width: 100%;
-  }
-
-  .search button {
-    margin-left: 0;
-  }
+  .navbar-header {
+    float: none;
+}
+.navbar-left,.navbar-right {
+    float: none !important;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+    display: flex!important;
+}
+.navbar-nav {
+    display: block ruby !important;
+    float: none!important;
+    margin-top: 7.5px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.collapse.in{
+    display:block !important;
+}
+#search-bar{
+  width: 205px !important;
+}
+.navbar-toggler-icon{
+  display: none;
+}
 }
