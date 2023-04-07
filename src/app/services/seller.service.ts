@@ -11,11 +11,12 @@ import { BehaviorSubject } from 'rxjs';
 export class SellerService {
   isSellerSignUp = new BehaviorSubject<boolean>(false)
   public isSellerError = new EventEmitter <boolean>(false)
+  url = 'https://inventory-management-2023-default-rtdb.firebaseio.com/seller.json'
 
   constructor(private http : HttpClient , private route : Router) { }
 
   postSellerData (data : Signup){
-    this.http.post('http://localhost:3000/seller',data , {observe: 'response'}).subscribe((res)=>{
+    this.http.post(this.url,data , {observe: 'response'}).subscribe((res)=>{
       console.log(res.body)
       if(res)
       this.isSellerSignUp.next(true)
@@ -34,7 +35,7 @@ export class SellerService {
 
 postSellerLoginData(data : Login){
 console.log("user Data")
-this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`, {observe:'response'}).subscribe((res:any)=>{
+this.http.get(`${this.url}?email=${data.email}&password=${data.password}`, {observe:'response'}).subscribe((res:any)=>{
   console.log(res.body)
   if(res && res.body && res.body.length){
    console.log(`user logged in`);
