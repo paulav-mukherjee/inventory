@@ -46,7 +46,7 @@ logoutSeller (){
 
 findProduct(quarry: KeyboardEvent){
  if (quarry){
-  const element = quarry.target as HTMLTextAreaElement
+  const element = quarry.target as HTMLInputElement
   // console.log(element.value);
   this.productService.searchProduct(element.value).subscribe((res)=>{
     console.warn(res);
@@ -59,5 +59,9 @@ findProduct(quarry: KeyboardEvent){
 }
 removeSearch(){
   this.searchedItems = undefined
+}
+searchValue(searchName: HTMLInputElement){
+this.route.navigate([`search/${searchName.value}`])
+
 }
 }

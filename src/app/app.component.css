@@ -28,3 +28,13 @@ padding-top: 20px;
 .head-line>marquee>img{
     height: 67px;
 }
+.app-body{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    background: linear-gradient(to bottom, rgb(123, 186, 250), rgb(0, 42, 83));
+
+}
+
+

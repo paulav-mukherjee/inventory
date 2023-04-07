@@ -40,11 +40,11 @@
   "products": [
     {
       "name": "Lipstick",
-      "price": "450",
+      "price": "₹450.00",
       "color": "Cherry red",
       "category": "Cosmetics",
       "description": "liquid matte & skin friendly",
-      "image": "https://rukminim1.flixcart.com/image/850/850/ky90scw0/lipstick/t/a/w/10-lip-shape-waterproof-lipstick-matte-makeup-long-lasting-original-imagafk5ysxjjrw5.jpeg?q=90",
+      "image": "https://media.allure.com/photos/63f902474208b7df99cb3b05/master/pass/2-23-dark-lipstick-v2.jpg",
       "id": 7
     },
     {
@@ -103,11 +103,11 @@
     },
     {
       "name": "Lakme iconic",
-      "price": "89",
+      "price": "₹89.00",
       "color": "black",
       "category": "Cosmetics",
       "description": "A long lasting kajal",
-      "image": "https://1.bp.blogspot.com/-SW0nZKDww2k/V2zsviqRp9I/AAAAAAAAGVE/xK8XafkcEowcKnCE1HZKT7lmWTuep-buQCLcB/w1200-h630-p-k-no-nu/image001.jpg",
+      "image": "https://2.bp.blogspot.com/-23pBmMjME_4/UH7HwF_po6I/AAAAAAAAHHs/tSJ6EGmfKJo/s1600/lakme+eyeconic+masacara+review.jpg",
       "id": 14
     }
   ]

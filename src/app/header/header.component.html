@@ -1,39 +1,54 @@
-
-<header>
-  <div class="logo" routerLink="/home">
-    <img src="assets/logo.jpg" height="70px" width="100px" alt="Logo">
-  </div>
-  <div class="search">
-    <form *ngIf="sellerLogged === 'default'"> 
-      <input type="text" placeholder="Search..." (keyup)="findProduct($event)" (blur)="removeSearch()">
-      <button type="submit">Go</button>
+<div class=" m-1">
+  <nav class="top-bar navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 42, 83)">
+    <a class="navbar-brand text-light" routerLink="/home">Inventory App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" #searchName style="width: 380px;" type="search" placeholder="Search" aria-label="Search" (keyup)="findProduct($event)" (blur)="removeSearch()">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="searchValue(searchName)">Search</button>
     </form>
     <ul class="search-items" *ngIf="searchedItems">
       <li *ngFor="let searchItems of searchedItems">
         <a>{{searchItems.name}}</a>
       </li>
     </ul>
-    
   </div>
-    
-  <nav>
-    <div [ngSwitch]="sellerLogged">
-      <ul *ngSwitchCase="'default'">
-        <li><a routerLink="home">Home</a></li>
-        <li><a routerLink="seller">Seller</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Cart(0)</a></li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngSwitch]="sellerLogged">
+      <ul class="navbar-nav mr-auto" *ngSwitchCase="'default'">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="seller">seller </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="#">Login </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="#">Cart(0) </a>
+        </li>
       </ul>
 
-      <ul *ngSwitchCase="'seller'">
-        <li><a routerLink="seller-product-list">Product List</a></li>
-        <li><a routerLink="seller">Edit Items</a></li>
-        <li><a (click)="logoutSeller ()">Log-out</a></li>
-        <li *ngIf="sellerName != ''"><a style="color: blueviolet; font-size: large;"><strong>Hi, {{sellerName | titlecase}}</strong></a></li>
+      <ul class="navbar-nav mr-auto" *ngSwitchCase="'seller'">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="seller-product-list">Product List</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="seller">Edit Items</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" (click)="logoutSeller ()">Log-out </a>
+        </li>
+        
+        <li class="nav-item active" *ngIf="sellerName != ''"><a style="color: blueviolet; font-size: large;"><strong>Hi, {{sellerName | titlecase}}</strong></a></li>
       </ul>
+      
     </div>
   </nav>
-  </header>
+</div>
+  
 
 
   

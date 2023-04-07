@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <h2 class="header-title">Listed Products</h2>
+    <h2 class="text-center text-dark">Listed Products</h2>
     <table class="table">
        <thead>
         <tr>
@@ -14,20 +14,20 @@
        </thead> 
        <tbody>
         <tr *ngFor="let items of productList">
-            <th><img src="{{items.image}}" alt="no image" height="150px" width="250px"></th>
-            <th>{{items.name | titlecase}}</th>
-            <th>{{items.price | titlecase | currency: 'INR'}}</th>
-            <th>{{items.color | titlecase}}</th>
-            <th>{{items.category | titlecase}}</th>
-            <th>{{items.description | titlecase}}</th>
-            <th>
+            <td><img src="{{items.image}}" alt="no image" height="100px" width="140px"></td>
+            <td>{{items.name | titlecase}}</td>
+            <td>{{items.price | titlecase | currency: 'INR'}}</td>
+            <td>{{items.color | titlecase}}</td>
+            <td>{{items.category | titlecase}}</td>
+            <td>{{items.description | titlecase}}</td>
+            <td>
                 <!--add font icon-->
                 
                 <fa-icon class="deleteIcons" [icon]="deletIcon" (click)="removeItem(items.id)"></fa-icon>
                 <a routerLink="/seller-update-list/{{items.id}}">
                     <fa-icon class="updateIcons" [icon]="updateIcon" (click)="updateItem(items.id)"></fa-icon>
                 </a>
-            </th>
+            </td>
         </tr>
        </tbody>
     </table>

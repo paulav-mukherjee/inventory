@@ -6,6 +6,7 @@ import { SellerHomeComponent } from './seller/seller-home/seller-home.component'
 import { SellerProductListComponent } from './seller/seller-product-list/seller-product-list.component';
 import { SellerUpdateProductComponent } from './seller/seller-update-product/seller-update-product.component';
 import { SellerComponent } from './seller/seller.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
     component : SellerUpdateProductComponent,
     canActivate: [AuthGuard]
   },
+  {
+    path: 'search/:quarry',
+    component: SearchComponent
+  }
 ];
 
 @NgModule({
