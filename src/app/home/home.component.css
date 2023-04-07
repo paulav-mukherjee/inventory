@@ -58,3 +58,9 @@
     text-shadow: 1px 1px black;
     font-size: large;
 }
+
+@media only screen and (max-width: 400px) {
+    .card{
+        width: 23rem !important;
+    }
+  }
