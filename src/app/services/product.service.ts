@@ -7,30 +7,32 @@ import { Product } from '../dataType';
 })
 export class ProductService {
 
+  url = 'https://inventory-management-2023-default-rtdb.firebaseio.com/products.json'
+
   constructor(private http: HttpClient) { }
 
   productAdding(data: any) {
-    return this.http.post('http://localhost:3000/products', data)
+    return this.http.post(this.url, data)
   }
   productListing() {
-    return this.http.get<Product[]>('http://localhost:3000/products')
+    return this.http.get<Product[]>(this.url)
   }
   deleteProduct(id: number) {
-    return this.http.delete(`http://localhost:3000/products/${id}`)
+    return this.http.delete(`${this.url}/${id}`)
   }
   getProduct (id : string) {
-return this.http.get<Product>(`http://localhost:3000/products/${id}`)
+return this.http.get<Product>(`${this.url}/${id}`)
   }
   updateProduct(product : Product){
-  return this.http.put<Product>(`http://localhost:3000/products/${product.id}`, product) 
+  return this.http.put<Product>(`${this.url}/${product.id}`, product) 
   }
   popularProduct(){
-    return this.http.get<Product[]>('http://localhost:3000/products?_limit=3')
+    return this.http.get<Product[]>(`${this.url}`)
   }
   trendyProduct(){
-    return this.http.get<Product[]>('http://localhost:3000/products?_limit=8')
+    return this.http.get<Product[]>(`${this.url}`)
   }
   searchProduct(quarry : string){
-    return this.http.get<Product[]>(`http://localhost:3000/products?q=${quarry}`)
+    return this.http.get<Product[]>(`${this.url}?q=${quarry}`)
   }
 }
