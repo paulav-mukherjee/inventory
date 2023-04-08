@@ -58,9 +58,18 @@
     text-shadow: 1px 1px black;
     font-size: large;
 }
-
+.d-block{
+    /* display: block !important; */
+    height: 312px !important;
+    width: 388px !important;
+}
 @media only screen and (max-width: 400px) {
     .card{
         width: 23rem !important;
+    }
+    .d-block{
+        /* display: block !important; */
+        height: 312px !important;
+        width: 388px !important;
     }
   }

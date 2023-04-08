@@ -11,7 +11,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  productAdding(data: any) {
+  productAdding(data: Product) {
     return this.http.post(this.url, data)
   }
   productListing() {
